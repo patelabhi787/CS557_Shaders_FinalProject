@@ -1,0 +1,32 @@
+##OpenGL GLIB
+
+Perspective 70
+LookAt 0 0 3  0 0 0  0 1 0
+
+Texture2D 1 splatmap.bmp
+Texture2D 3 Final_height.bmp
+Texture2D 2 Final_Brick_height.bmp
+Texture2D 5 Final_Dirt_Dust.bmp
+Texture2D 4 Final_brick2.bmp
+Texture2D 7 Final_normal.bmp
+Texture2D 6 Final_Brick_normal.bmp
+
+Vertex		Final.vert
+Fragment	Final.frag
+Program		Final Project					\
+		splatmap 1							\
+		texture1Height 2					\
+		texture2Height 3					\
+		texture1Diffuse 4					\
+		texture2Diffuse 5					\
+		texture1Normal 6					\
+		texture2Normal 7					\
+		uNoiseAmp <0. 0. 10.>            	\
+		uNoiseFreq <0.1 1. 20.>         	\
+		uLightX <-20. 5. 20.>   			\
+		uLightY <-20. 10. 20.>				\
+		uLightZ <-20. -3. 20.>				\
+		uColor {1. 1 1 1.}					\
+		uAmbientColor {1, 1, 1, 1.}
+
+QuadXY  -0.2  1.  250 250
